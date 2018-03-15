@@ -45,7 +45,7 @@ Currently it shows:
 * Current Go version (`🐹`).
 * Current PHP version (`🐘`).
 * Current Rust version (`𝗥`).
-* Current version of Haskell Tool Stack (`λ`).
+* Current version of Haskell GHC Compiler, defined in stack.yaml file (`λ`).
 * Current Julia version (`ஃ`).
 * Current Docker version and connected machine (`🐳`).
 * Current Amazon Web Services (AWS) profile (`☁️`) ([Using named profiles](http://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html)).
@@ -70,7 +70,7 @@ Want more features? Please, [open an issue](https://github.com/denysdovhan/space
 ## Preview
 
 <p align="center">
-  <img alt="Spaceship with Hyper and One Dark" src="./preview.gif" width="980px">
+  <img alt="Spaceship with Hyper and One Dark" src="https://user-images.githubusercontent.com/10276208/36086434-5de52ace-0ff2-11e8-8299-c67f9ab4e9bd.gif" width="980px">
 </p>
 
 You can find more examples with different color schemes in [Screenshots](https://github.com/denysdovhan/spaceship-prompt/wiki/Screenshots) wiki-page.
@@ -146,6 +146,18 @@ Use this command in your `.zshrc` to load Spaceship as prompt theme:
 
 ```
 zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
+```
+
+### Linux package manager
+
+#### Arch Linux
+
+Install the latest master from the AUR package [`spaceship-prompt-git`](https://aur.archlinux.org/packages/spaceship-prompt-git/):
+
+```
+git clone https://aur.archlinux.org/spaceship-prompt-git.git
+cd spaceship-prompt-git
+makepkg -si
 ```
 
 ### Manual
